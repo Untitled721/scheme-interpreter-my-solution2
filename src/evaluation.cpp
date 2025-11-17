@@ -146,7 +146,6 @@ Value Plus::evalRator(const Value &rand1, const Value &rand2) { // +
         int n1 = dynamic_cast<Integer*>(rand1.get())->n;
         int n2 = dynamic_cast<Integer*>(rand2.get())->n;
         int result = n1 + n2;
-        std::cout << "Adding integers: " << n1 << " + " << n2 << " = " << (n1+n2) << std::endl;
         return IntegerV(result);
     }
     else if (rand1->v_type == V_RATIONAL && rand2->v_type == V_RATIONAL) {
